@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install -D dotenv 2>&1 | tail -3)"
+    ]
+  }
+}
