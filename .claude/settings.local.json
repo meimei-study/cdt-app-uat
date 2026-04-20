@@ -3,5 +3,20 @@
     "allow": [
       "Bash(npm install -D dotenv 2>&1 | tail -3)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"const c=[];process.stdin.on('data',d=>c.push(d));process.stdin.on('end',()=>{const i=JSON.parse(c.join(''));const f=i.tool_input?.file_path||i.tool_response?.filePath||'';if(f&&/\\\\.(ts|js|json)$/.test(f)&&!/CLAUDE\\\\.md|package-lock\\\\.json/.test(f)){process.stdout.write(JSON.stringify({hookSpecificOutput:{hookEventName:'PostToolUse',additionalContext:'Source file modified: '+f+'. Review and update CLAUDE.md at D:/Automation-Test/cdt-app-uat/CLAUDE.md if this change affects the documented architecture, commands, page objects, fixtures, or test patterns.'}}))}});\"",
+            "timeout": 10,
+            "statusMessage": "Checking if CLAUDE.md needs updating..."
+          }
+        ]
+      }
+    ]
   }
 }
