@@ -1,0 +1,75 @@
+{
+  "cookies": [
+    {
+      "name": "localization",
+      "value": "VN",
+      "domain": "review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1808281447.101926,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cart_currency",
+      "value": "SGD",
+      "domain": "review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1777955047.10215,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_y",
+      "value": "1f555974-8091-4c19-8b9e-cf3fc5329c6d",
+      "domain": ".review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1808303047.102275,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_s",
+      "value": "284090c2-dcf7-4d00-b074-e4c6c7b9e8d9",
+      "domain": ".review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1776747247.102457,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_analytics",
+      "value": ":AZ2uR_rwAAEAsFhz5yIopT3BurOFZkciWt3Cnq_k79x8zs7_zd8YTHR2oz5g373VxHrmwilrBvOWcZOIKY5yKci0BmSCR5F-_Mxj20H592YYQj17yQ:",
+      "domain": "review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1808281446.315258,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_marketing",
+      "value": ":AZ2uR_rxAAEAPbroBRPTYHKQC4SSr2BlHqzKQFRdMfXJQI-5sVX6N0xW8ArXcUJ-pfVRQfb2Xq_2SzTJ0Sg2ZAWFYVY:",
+      "domain": "review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1808281446.315323,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_shopify_essential",
+      "value": ":AZ2uR_nEAAEAvwaayK8FyuTgbK4myn2q5HuotaHljpl3tqqMFPgJO2Mltc92Tv4KVueS8kAwtKNOYc3S3MYUalOzjFyT-KpgwsVnP3m6ImfPleRj-RXDMF0T0GYAZz_ccPeuq3LReS8XsN1fmQm-8FewOtvrLAFhi5fAIsHU3AtSEOjmwSW-4LIH8K1ZmL_Ai2t0ndoPtZ6iFDG5upD4QbBaGiT6wuo6FkTrEqWpJQF2iwDhUN8m7WjMSZuRgWy4lyz95Mrwyxeohq_3rtlgueuTZAsTTqcNY40AxrzBKaIwnZnAC-KRWZC1dNgD7cX3URKcGvBrxOuSbwHaMO5ThxmWjh1c-X9Mg5bGbIkk2VCahTursyA0xtjf57PWkD-PQS0t1LZI4ADgf86TAqG7KIFSowwAXj1thFxln_VtVwcVwGH4jYxSM_YihHQSw5b8EVk4m_vdKUjTXu0ahiAiGa_EmrvJE1uDVTc2GR4SbgdLO-vIXddM-FU6COS21hL0qtXgNdkWNlxUMV-H8rTLEiUxcUhU_h3W6DpsGNOt9t9MmV8e1hSQAxoaYI1pbS4oWdY:",
+      "domain": "review-jan.myshopify.com",
+      "path": "/",
+      "expires": 1808281446.974735,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

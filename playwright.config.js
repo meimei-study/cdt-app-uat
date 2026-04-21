@@ -9,16 +9,32 @@ module.exports = defineConfig({
   fullyParallel: false,
   retries: 1,
   reporter: [['html', { open: 'never' }], ['list']],
-  use: {
-    baseURL: 'https://review-jan.myshopify.com',
-    headless: false,
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
-  },
+
   projects: [
+    // ── Setup: login once, save session to .auth/storefront.json ────────────
+    {
+      name: 'setup',
+      testMatch: /.*auth\.setup\.ts/,
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: 'https://review-jan.myshopify.com',
+        headless: false,
+        // No storageState here — this IS the step that creates it
+      },
+    },
+
+    // ── Main tests: reuse saved session ─────────────────────────────────────
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        baseURL: 'https://review-jan.myshopify.com',
+        headless: false,
+        screenshot: 'only-on-failure',
+        video: 'retain-on-failure',
+        storageState: '.auth/storefront.json',
+      },
+      dependencies: ['setup'],
     },
   ],
 });

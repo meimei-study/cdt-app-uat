@@ -26,5 +26,7 @@ export class BaseWidgetPage {
     // Allow CDT widget JS to initialize
     await this.page.waitForTimeout(1500);
   }
+
 }
+
 

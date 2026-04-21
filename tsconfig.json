@@ -6,8 +6,7 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
+    "types": ["node"],
   },
   "include": ["tests/**/*.ts", "pages/**/*.ts", "fixtures/**/*.ts"]
 }
