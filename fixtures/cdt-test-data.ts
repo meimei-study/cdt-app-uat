@@ -4,6 +4,7 @@ export const STORE_PASSWORD = process.env.SHOPIFY_PASSWORD || '123456';
 // ── Widget type suffixes (set in .env, e.g. "01-flipper", "02-bar") ──────────
 // These map to the CDT app's generated class: .sct-timer.sct-timer-{TYPE}
 // export const HEADER_TIMER_TYPE       = process.env.CDT_HEADER_TIMER_TYPE       || '01-flipper';
+export const HEADER_TIMER_ID       = process.env.CDT_HEADER_TIMER_ID       || '87142';
 export const ANNOUNCEMENT_BAR_ID = process.env.CDT_ANNOUNCEMENT_BAR_ID || '87143';
 // ── Page URLs ────────────────────────────────────────────────────────────────
 
